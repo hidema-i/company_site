@@ -18,6 +18,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //TOPページ
-Route::get('/', function () {
-    return view('top');
-});
+Route::get('/',"TopPageController@show");
