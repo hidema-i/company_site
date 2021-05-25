@@ -1,21 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+@include("parts.common", [ "title" => "会社概要" ])
+@include("parts.nav")
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}" />
-</head>
+<!-- Image Showcases -->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>会社概要ページ</h2>
 
-<body>
-    @include("parts.common",["title" => "会社概要"])
-    @include("parts.header")
-    <main>
-        <h1>会社概要ページ</h1>
-        <p>現在の時間は {{ $current_time }} です<p>
-    </main>
-    @include("parts.footer")
-</body>
+                <p class="lead mb-0">
+                    株式会社NIKEの会社概要についてお知らせします。<br />
+                    現在の時間は {{ $current_time }} です<br />
+                    <br />
 
-</html>
+                <ul>
+                    <li>社　名：　株式会社NIKE</li>
+                    <li>創　業：　2019年12月31日</li>
+                    <li>代表者：　nike nike</li>
+                    <li>所在地：　東京都千代田区千代田1-1</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@include("parts.footer")
